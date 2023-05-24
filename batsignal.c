@@ -549,7 +549,7 @@ int main(int argc, char *argv[])
       if (full && battery_state != STATE_FULL) {
         if (battery_level >= full || battery_full) {
           battery_state = STATE_FULL;
-          notify(fullmsg, NOTIFY_URGENCY_NORMAL);
+          notify(fullmsg, NOTIFY_URGENCY_LOW);
         }
       }
     }
